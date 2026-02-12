@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        int[] weight = new int[12];
+        int[] weight = new int[3];
         weight[0] = 1;
         weight[1] = 2;
         weight[2] = 3;
@@ -18,13 +18,22 @@ public class Main {
         System.out.println();
 
         for (int i = 0; i < weight.length; i++) {
-            System.out.print(weight[i] + ", ");
+            if (i == weight.length - 1) {
+                System.out.print(weight[i]);
+            } else {
+                System.out.print(weight[i] + ", ");
+
+            }
         }
 
         System.out.println();
 
         for (int i = weight.length - 1; i >= 0; i--) {
-            System.out.print(weight[i] + ", ");
+            System.out.print(weight[i]);
+            if (i != 0) {
+                System.out.print(", ");
+
+            }
         }
 
         System.out.println();
@@ -39,7 +48,7 @@ public class Main {
 
         System.out.println();
 
-        double[] dWeight = {1.57, 7.654, 9.986, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        double[] dWeight = {1.57, 7.654, 9.986};
 
         for (int i = 0; i < dWeight.length; i++) {
             System.out.println(dWeight[i]);
@@ -48,13 +57,20 @@ public class Main {
         System.out.println();
 
         for (int i = 0; i < dWeight.length; i++) {
-            System.out.print(dWeight[i] + ", ");
-        }
+            if (i == dWeight.length - 1) {
+                System.out.print(dWeight[i]);
+            } else {
+                System.out.print(dWeight[i] + ", ");
 
+            }
+        }
         System.out.println();
 
         for (int i = dWeight.length - 1; i >= 0; i--) {
-            System.out.print(dWeight[i] + ", ");
+            System.out.print(dWeight[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
     }
 }
