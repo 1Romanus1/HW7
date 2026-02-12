@@ -25,6 +25,18 @@ public class Main {
 
             }
         }
+        System.out.println();
+
+        int[] aWeight = new int[5];
+        for(int i = 0; i < aWeight.length; i++) {
+            aWeight[i] = i + 1;
+            if (i == aWeight.length - 1) {
+                System.out.print(aWeight[i]);
+            } else {
+                System.out.print(aWeight[i] + ", ");
+
+            }
+        }
 
         System.out.println();
 
@@ -35,6 +47,8 @@ public class Main {
 
             }
         }
+        System.out.println();
+
 
         System.out.println();
 
